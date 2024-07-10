@@ -21,6 +21,9 @@ jobs:
       - name: Validate PHP syntax
         run: find . -name "*.php" -not -path "./vendor/*" -exec php -l {} \;
 
+      - name: Install PHP_CodeSniffer
+        run: composer global require "squizlabs/php_codesniffer=*"
+
       - name: Install dependencies
         run: composer install
 
