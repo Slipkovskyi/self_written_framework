@@ -11,7 +11,7 @@ use App\Core\Router\Route;
 class HomeController extends AbstractController
 {
     #[Route(path: '/home', method: ['GET'])]
-    public function HelloWorld(): void
+    public function helloWorld(): void
     {
         $this->render(['item' => 'World!'], 'home/home');
     }
