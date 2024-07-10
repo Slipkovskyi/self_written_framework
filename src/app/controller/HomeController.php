@@ -1,5 +1,7 @@
 <?php
 
+namespace App\app\controller;
+
 use App\Core\Controller\AbstractController;
 use App\Core\Router\Route;
 
